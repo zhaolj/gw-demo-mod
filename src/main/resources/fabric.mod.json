@@ -19,7 +19,7 @@
 			"com.gw.mod.demo.GWDemoMod"
 		],
 		"client": [
-			"com.gw.mod.demo.GWDemoModClient "
+			"com.gw.mod.demo.GWDemoModClient"
 		],
 		"fabric-datagen": [
 			"com.gw.mod.demo.GWDemoModDataGenerator"
