@@ -1,5 +1,7 @@
 package com.gw.mod.demo;
 
+import com.gw.mod.demo.registry.ModItemGroup;
+import com.gw.mod.demo.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -9,6 +11,7 @@ public class GWDemoMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
+	public static final String MOD_ID = "gwdemo-mod";
     public static final Logger LOGGER = LoggerFactory.getLogger("gwdemo-mod");
 
 	@Override
@@ -18,5 +21,7 @@ public class GWDemoMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ModItemGroup.registerModItemGroup();
+		ModItems.registerItems();
 	}
 }
